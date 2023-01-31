@@ -1,5 +1,9 @@
 import inspect
 
+# pythonモジュールとして適切なパスに対して、そのモジュール名を返却します。
+# pythonモジュールとして適切かどうかはファイルの拡張子で判断します。またその拡張子のリストは importlib.machinery.all_suffixes() 
+# によって確認できます。
+
 # 実際に存在するPythonモジュールまでのパス
 path = r'/Users/sayama_yusei/Documents/private/study_python/inspect_demo/getmodulename_demo.py'
 print(inspect.getmodulename(path=path))  # getmodulename_demo
